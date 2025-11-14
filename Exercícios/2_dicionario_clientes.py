@@ -1,3 +1,7 @@
+"""
+Exercício - Dicionário de Clientes
+"""
+
 clientes = {
     'cliente1': {
         'nome': 'Victor',
