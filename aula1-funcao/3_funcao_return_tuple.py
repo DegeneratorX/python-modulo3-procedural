@@ -1,5 +1,5 @@
 """
-Funções (def) em Python
+Funções mais complexas com vários parâmetros e múltiplos retornos de valores.
 """
 
 
@@ -16,9 +16,9 @@ print()
 
 def funcretorna(a1, a2, a3, nome='Victor'):
     print(a1, a2, a3)
-    return nome, a1
+    return nome, a1 # Quando se retorna mais de um valor, na verdade está retornando uma tupla.
 
 
 var = funcretorna(1, 2, 5, nome="Zé")  # Retornará uma tupla
-print(var)  # Printará o que foi retornado. Que foi a tupla.
-print(var[0], var[1])  # Acesso os índices da tupla
+print("Retorno da função:", var, type(var))  # Printará o que foi retornado. Que foi a tupla.
+print("Índices 0 e 1 da tupla:", var[0], var[1])  # Acesso os índices da tupla

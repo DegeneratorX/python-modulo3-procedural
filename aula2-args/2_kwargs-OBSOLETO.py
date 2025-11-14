@@ -1,16 +1,15 @@
 """
-Funções - *args **kwargs  <-- keywords arguments
-'args' e 'kwargs' são nomes de convenção, um padrão da comunidade python.
-Pode usar qualquer outro nome. Mas por recomendação, usa-se args e kwargs.
-O importante é o que * e ** fazem.
+Funções - **kwargs
+'kwargs' é um nome convenção, um padrão da comunidade python.
+Pode usar qualquer outro nome. Mas por recomendação, usa-se kwargs.
+O importante é o que ** faz. 
+Obs: **kwargs nada mais é que um dicionário.
 """
 
 
 def func(*args, **kwargs):
     print(args)
-    print(kwargs)  # Basicamente args não recebe parâmetros definidos, como nome e sobrenome.
-    #                Quem recebe é o kwargs.
-    print("----------------")
+    print(kwargs)  # Basicamente args não recebe parâmetros definidos, como nome e sobrenome. Quem recebe é o kwargs.
     print(kwargs['nome'])  # Acesso específico a um elemento de kwargs.
     print(args[0])  # Acesso específico a um elemento de args.
 

@@ -1,6 +1,7 @@
 """
 Função - def em python
-Função serve pra evitar alterações massivas de linhas de código.
+Função serve pra evitar alterações massivas de linhas de código, além de reaproveitamento de código.
+Uma função pode receber ou não parâmetros, e pode ou não retornar valores.
 """
 
 
@@ -16,8 +17,12 @@ funcao("Show", "Maria")
 #######################################
 print()
 
-
-def saudacao(msg = 'Olá', nome = 'Uusário'):  # Definidos default.
+"""
+Parâmetros default - São parâmetros que já vêm com um valor pré-definido na função.
+Se na chamada da função eu não passar nenhum valor para o parâmetro, ele usará o valor default.
+Mas se eu passar um valor, ele substituirá o valor default.
+"""
+def saudacao(msg = 'Olá', nome = 'Usuário'):  # Definidos default.
     print(msg, nome)
 
 
