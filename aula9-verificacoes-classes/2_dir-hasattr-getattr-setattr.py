@@ -66,6 +66,10 @@ setattr()
 A função setattr() recebe três parâmetros: o objeto, uma string com o nome do
 atributo e o valor a ser atribuído. Se o atributo existir, seu valor será
 atualizado. Se não existir, o atributo será criado com o valor fornecido.
+
+OBSERVAÇÃO: O setattr() só funciona em objetos que permitem a criação de
+atributos dinâmicos, como objetos de classes criadas pelo usuário. Não funciona
+em objetos de classes internas do Python, como listas, strings, dicionários, etc.
 """
 
 class MinhaClasse:

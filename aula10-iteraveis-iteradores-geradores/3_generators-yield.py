@@ -1,3 +1,14 @@
+"""
+Generator e Yield em Python
+
+Funções Geradoras utilizam a palavra-chave 'yield' para retornar valores um por vez, 
+permitindo que a função seja pausada e retomada posteriormente.
+"""
+
+
+"""
+Implementação tradicional sem gerador
+"""
 
 import sys
 import time
@@ -18,17 +29,20 @@ for v in t:  # Iterando sobre a lista preenchida.
 
 print('Consumo de memória: ', sys.getsizeof(t))  # A lista consome aprox. 9KB (aprox 9000 bytes)
 
-#####################################################
-print()
+
+print("\n################################################\n")
+"""
+Implementação com gerador usando 'yield'
+"""
 
 
-def gera():  # Gerador real.
+def gerador():  # Gerador real.
     for n in range(100):
         yield n  # 'Yield' mostra valor por valor. Como se fosse 1 'return' por vez.
         time.sleep(0.1)
 
 
-g = gera()  # yield joga 1 valor de cada vez para g...
+g = gerador()  # yield joga 1 valor de cada vez para g...
 
 for v in g:  # ... ao mesmo tempo que v recebe 1 valor de cada vez vindo de g...
     print(v)  # ... e assim 1 valor é mostrado de cada vez.
