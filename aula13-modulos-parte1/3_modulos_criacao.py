@@ -6,14 +6,14 @@ classes e variáveis que podem ser reutilizados em outros programas. Criar módu
 a organizar o código, promover a reutilização e facilitar a manutenção.
 """
 
-import modulo_exemplo
+import modulo_1
 
 print("Este é o módulo '__main__.py' sendo executado: ", __name__)
-print(modulo_exemplo.variavel_modulo)
+print(modulo_1.variavel_modulo)
 
-from modulo_exemplo import variavel_modulo
+from modulo_1 import variavel_modulo
 print(variavel_modulo)
 
-from modulo_exemplo import soma
+from modulo_1 import soma
 resultado = soma(5, 7)
-print("Resultado da soma usando a função do módulo_exemplo:", resultado)
+print("Resultado da soma usando a função do módulo:", resultado)

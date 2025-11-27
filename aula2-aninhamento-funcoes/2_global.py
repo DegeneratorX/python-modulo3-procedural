@@ -34,6 +34,11 @@ func3()
 print(variavel_global) # Graças à keyword 'global', alterou a variável pra sempre, mesmo na função.
 
 
+
+
+
+
+print("\n#########################################\n")
 """
 O problema é que isso não é uma boa prática da programação. Existe uma solução melhor e otimizada.
 """

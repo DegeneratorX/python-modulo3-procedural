@@ -26,6 +26,10 @@ funcao_externa() # Chamando a função externa (execução padrão em quase toda
 # - chamar 'funcao_interna()' fora de 'funcao_externa' resultará em erro, pois 'funcao_interna()' não está definida no escopo global. 
 ############################################################################################################################################
 
+
+
+
+print("\n################################################\n")
 """
 Para resolver o problema de acessar valores de funções externas, podemos retornar a função interna.
 """
